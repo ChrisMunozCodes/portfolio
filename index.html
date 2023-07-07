@@ -145,23 +145,25 @@
 					<div class="container">
 
 						<section>
-							<h4>Want to get in touch? Send me a message!</h4>
-							<form method="post" action="#">
+							<h3>Want to get in touch? Send me a message!</h3>
+							<form name="contact" method="POST" data-netlify="true" class="form">
 								<div class="row gtr-uniform gtr-50">
 									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+										<label class="field_title" for="name">Name:</label>
+										<div class="field_content"><input type="text" id="name" name="name" placeholder="First Name" /></div>
 									</div>
 									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+										<label class="field_title" for="email">Email:</label>
+										<div class="field_content"><input type="text" id="email" name="email" placeholder="Email" /></div>
 									</div>
 									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+										<label class="field_title" for="additional">Additional Information:</label>
+										<div class="field_content"><textarea id="additional" name="additional" placeholder="Additional Information"></textarea></div>
 									</div>
 									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
+										<p class="buttons">
+											<button type="submit">Send Message</button>
+										  </p>
 									</div>
 								</div>
 							</form>
