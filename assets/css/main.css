@@ -194,7 +194,7 @@ input, select, textarea {
 	}
 
 		hr.major {
-			margin: 3em 0;
+			margin: 3em;
 		}
 
 	blockquote {
@@ -350,7 +350,7 @@ input, select, textarea {
 
 .about-p {
 	text-align: center;
-	margin: 1em;
+	margin: 2em;
 	padding: 0, 20em;
 }
 
@@ -359,7 +359,9 @@ input, select, textarea {
 }
 
 .icon-list li a{
-	size: 50em;
+	width: 2em;
+	height: 2em;
+	
 }
 
 .pfp {
@@ -371,6 +373,43 @@ input, select, textarea {
 	border-radius: 100%;
 	size: 2em;
 }
+
+.tech-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	overflow: auto;
+	box-sizing: border-box;
+
+}
+
+.tech-text {
+	font-size: 1em;
+	justify-content: center;
+	margin: 0;
+
+}
+
+.tech-logo {
+	width: 1em;
+	height: 1em;
+	justify-content: center;
+
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-container {
+	margin: 1em;
+	overflow: auto;
+	height: 100%;
+}
+
 
 		@media screen and (max-width: 480px) {
 
@@ -2365,16 +2404,9 @@ input, select, textarea {
 	}
 
 
-		header.major:after {
-			background: rgba(211, 211, 211, 0.272);
-			content: '';
-			display: inline-block;
-			height: 1px;
-			width: 30em;
-		}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
-			margin: 0;
+			margin: 1em;
 		}
 
 		header.major p {
