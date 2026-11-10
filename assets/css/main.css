@@ -379,7 +379,8 @@ input, select, textarea {
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
-	overflow: auto;
+	flex-wrap: wrap;
+	gap: 0.35em;
 	box-sizing: border-box;
 
 }
@@ -396,6 +397,17 @@ input, select, textarea {
 	height: 1em;
 	justify-content: center;
 
+}
+
+.tech-badge {
+	background-color: #363634;
+	border-radius: 0.25em;
+	color: #ffffff;
+	font-size: 0.7em;
+	line-height: 1.8em;
+	margin: 0;
+	padding: 0 0.45em;
+	white-space: nowrap;
 }
 
 .flex {
